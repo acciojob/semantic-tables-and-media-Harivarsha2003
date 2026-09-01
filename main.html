@@ -3,14 +3,60 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<title>Semantic Tables and Media</title>
+	<style>
+		table{
+			border: 1px solid black;
+			border-spacing: 1px;
+			border-collapse:collapse;
+		}
+		tr,th,td{
+			border: 1px solid black;
+			padding: 1px;
+		}
+		thead{
+			background-color: gray;
+		}
+		tbody{
+			background-color: white;
+			color: black;
+		}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<table>
+		<thead>
+			<tr>
+				<th>Roll numbers</th>
+				<th>Names</th>
+			</tr>
+		</thead>
 
+		<tbody>
+			<tr>
+				<td>101</td><td>Murugan</td>
+			</tr>
+			<tr>
+				<td>102</td><td>Arul</td>
+			</tr>
+			<tr>
+				<td>103</td><td>Hari</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>List of medias</h2>
+	<ol>
+		<li><img alt="water drop" src="https://picsum.photos/id/123/200/300"></li>
+		<li><vedio controls height="500px">
+			<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+		</vedio></li>
+		<li>
+			<audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">nature sound</audio>
+		</li>
+	</ol>
+	
 </body>
 
 </html>
